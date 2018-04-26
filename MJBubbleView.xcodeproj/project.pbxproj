@@ -13,8 +13,9 @@
 		069B94C22091AACE009CEEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069B94C12091AACE009CEEEF /* Assets.xcassets */; };
 		069B94C52091AACE009CEEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069B94C32091AACE009CEEEF /* LaunchScreen.storyboard */; };
 		069B94C82091AACE009CEEEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B94C72091AACE009CEEEF /* main.m */; };
-		069B94DD2091B3AD009CEEEF /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 069B94DC2091B3AD009CEEEF /* Assets */; };
-		069B94DF2091B3DB009CEEEF /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 069B94DE2091B3DB009CEEEF /* Classes */; };
+		069B95192091C39F009CEEEF /* MJBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B95152091C39E009CEEEF /* MJBubbleView.m */; };
+		069B951A2091C39F009CEEEF /* img_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 069B95172091C39E009CEEEF /* img_bubble@2x.png */; };
+		069B951B2091C39F009CEEEF /* img_bubble@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 069B95182091C39E009CEEEF /* img_bubble@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,10 @@
 		069B94C42091AACE009CEEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069B94C62091AACE009CEEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		069B94C72091AACE009CEEEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		069B94DC2091B3AD009CEEEF /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = SOURCE_ROOT; };
-		069B94DE2091B3DB009CEEEF /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = SOURCE_ROOT; };
+		069B95142091C39E009CEEEF /* MJBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBubbleView.h; sourceTree = "<group>"; };
+		069B95152091C39E009CEEEF /* MJBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBubbleView.m; sourceTree = "<group>"; };
+		069B95172091C39E009CEEEF /* img_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_bubble@2x.png"; sourceTree = "<group>"; };
+		069B95182091C39E009CEEEF /* img_bubble@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_bubble@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +65,8 @@
 		069B94B72091AACD009CEEEF /* MJBubbleView */ = {
 			isa = PBXGroup;
 			children = (
-				069B94DC2091B3AD009CEEEF /* Assets */,
-				069B94DE2091B3DB009CEEEF /* Classes */,
+				069B95162091C39E009CEEEF /* Assets */,
+				069B95132091C39E009CEEEF /* Classes */,
 				069B94B82091AACD009CEEEF /* AppDelegate.h */,
 				069B94B92091AACD009CEEEF /* AppDelegate.m */,
 				069B94BB2091AACD009CEEEF /* ViewController.h */,
@@ -76,6 +79,24 @@
 			);
 			path = MJBubbleView;
 			sourceTree = "<group>";
+		};
+		069B95132091C39E009CEEEF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				069B95142091C39E009CEEEF /* MJBubbleView.h */,
+				069B95152091C39E009CEEEF /* MJBubbleView.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		069B95162091C39E009CEEEF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				069B95172091C39E009CEEEF /* img_bubble@2x.png */,
+				069B95182091C39E009CEEEF /* img_bubble@3x.png */,
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -135,10 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				069B94C52091AACE009CEEEF /* LaunchScreen.storyboard in Resources */,
-				069B94DD2091B3AD009CEEEF /* Assets in Resources */,
-				069B94DF2091B3DB009CEEEF /* Classes in Resources */,
 				069B94C22091AACE009CEEEF /* Assets.xcassets in Resources */,
+				069B951A2091C39F009CEEEF /* img_bubble@2x.png in Resources */,
 				069B94C02091AACD009CEEEF /* Main.storyboard in Resources */,
+				069B951B2091C39F009CEEEF /* img_bubble@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +173,7 @@
 				069B94BD2091AACD009CEEEF /* ViewController.m in Sources */,
 				069B94C82091AACE009CEEEF /* main.m in Sources */,
 				069B94BA2091AACD009CEEEF /* AppDelegate.m in Sources */,
+				069B95192091C39F009CEEEF /* MJBubbleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76MM79XMJ9;
 				INFOPLIST_FILE = MJBubbleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76MM79XMJ9;
 				INFOPLIST_FILE = MJBubbleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
